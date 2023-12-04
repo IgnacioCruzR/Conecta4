@@ -1,13 +1,10 @@
-
 #include <iostream>
-#include "JugadorIa.h"
 using namespace std;
 
 int tab[7][6];
 int eleccion, player;
 bool fin = false;
 int a=0;
-JugadorIa ai;
 
 void check(int x)
 {
@@ -117,7 +114,12 @@ int win_check()
         }
     }
 }
-hol
+
+int ai_choice()
+{
+    return rand() % 7 + 1; 
+}
+
 int p_choice()
 {
     player = 1;
@@ -130,7 +132,7 @@ int p_choice()
         }
         else
         {
-            eleccion = ai.choice();
+            eleccion = ai_choice();
             cout << "AI chooses column " << eleccion << endl;
         }
 
@@ -158,11 +160,12 @@ int p_choice()
 int main()
 {
     srand(time(0)); 
-
     system("clear");
     cout<<"Bienvenido a conecta 4"<<endl;
    
     draw();
     p_choice();
-
     return 0;
+}
+
+
