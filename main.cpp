@@ -117,7 +117,7 @@ int win_check()
         }
     }
 }
-
+hol
 int p_choice()
 {
     player = 1;
