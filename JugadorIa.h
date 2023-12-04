@@ -1,7 +1,7 @@
 #include "../../usr/include/c++/9/bits/algorithmfwd.h"
 class JugadorIa {
 public:
-cambios de ayer 
+cambios de ayer y hoy xd 
     int choice(int tab [][]) {
         int bestScore = -10000;
         int move = 0;
